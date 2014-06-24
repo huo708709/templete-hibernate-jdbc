@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-4.0.xsd  
+						http://www.springframework.org/schema/security 
+						http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+	<global-method-security pre-post-annotations="enabled" />
+	<http pattern="/script/**" security="none" />
+	<http pattern="/login.jsp" security="none" />
+
+	<http use-expressions="true" auto-config="true"
+		access-denied-page="/timeout.jsp">
+		<form-login login-page="/login.jsp" default-target-url="/platform/index.jsp"
+			always-use-default-target="true" authentication-failure-url="/login.jsp?login_error=1" />
+		<logout invalidate-session="true" logout-success-url="/login.jsp"
+			logout-url="/j_spring_security_logout" />
+		<remember-me/>
+		<session-management invalid-session-url="/login.jsp" session-fixation-protection="none">
+			<concurrency-control max-sessions="1" error-if-maximum-exceeded="false"/>
+		</session-management>
+		<custom-filter ref="myFilter" before="FILTER_SECURITY_INTERCEPTOR"/>
+		<session-management session-authentication-strategy-ref="sas" />
+	</http>
+	
+	<beans:bean id="sas" class="org.springframework.security.web.authentication.session.ConcurrentSessionControlStrategy">
+		<beans:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
+		<beans:property name="maximumSessions" value="1" />
+		<beans:property name="alwaysCreateSession" value="true" />
+		<beans:property name="migrateSessionAttributes" value="false" />
+		<beans:property name="exceptionIfMaximumExceeded" value="false" />
+	</beans:bean>
+	
+	<beans:bean id="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl" />
+	
+	<beans:bean class="org.springframework.security.authentication.event.LoggerListener" />
+	
+	<beans:bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<beans:property name="basenames" value="classpath:message_zh_CN" />
+	</beans:bean>
+	
+	<beans:bean id="myFilter" class="com.templete.security.SecurityFilter">
+		<beans:property name="authenticationManager" ref="myAuthenticationManager" />
+		<beans:property name="accessDecisionManager" ref="myAccessDecisionManager" />
+		<beans:property name="securityMetadataSource" ref="mySecurityMetadataSource" />
+	</beans:bean>
+	
+	<authentication-manager alias="myAuthenticationManager">
+		<authentication-provider user-service-ref="myUserDetailServiceImpl">
+			<password-encoder hash="md5" ref="passwordEncoder"></password-encoder>
+		</authentication-provider>
+	</authentication-manager>
+	
+	<beans:bean id="myAccessDecisionManager" class="com.templete.security.SecurityAccessDecisionManager" />
+	
+	<beans:bean id="mySecurityMetadataSource" class="com.templete.security.SecurityMetadataSource" />
+	
+	<beans:bean id="myUserDetailServiceImpl" class="com.templete.security.UserDetailServiceImpl" />
+	
+	<beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" />
+</beans:beans>  
