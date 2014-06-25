@@ -9,13 +9,19 @@ import org.springframework.stereotype.Service;
 import com.templete.dao.UserDao;
 import com.templete.entity.security.User;
 import com.templete.exception.SystemRunException;
+import com.templete.service.AbstractService;
 import com.templete.service.IUserService;
 
-@Service
-public class UserService implements IUserService {
+@Service("userService")
+public class UserService extends AbstractService<User, String> implements IUserService {
 
 	@Autowired
 	private UserDao userDao;
+	
+	@Autowired
+	public void setUserDao(UserDao userDao) {
+		setAbstractDao(userDao);
+	}
 	
 	@Override
 	public User loadUserByUsername(String username) throws SystemRunException {
@@ -26,8 +32,8 @@ public class UserService implements IUserService {
 		return null;
 	}
 	
-	@Override
-	public User save(User entity) throws SystemRunException {
-		return (User) userDao.save(entity);
-	}
+//	@Override
+//	public User save(User entity) throws SystemRunException {
+//		return (User) userDao.save(entity);
+//	}
 }
