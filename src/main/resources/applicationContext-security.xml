@@ -24,11 +24,13 @@
 		<session-management session-authentication-strategy-ref="sas" />
 	</http>
 	
-	<beans:bean id="sas" class="org.springframework.security.web.authentication.session.ConcurrentSessionControlStrategy">
+	<beans:bean id="sas" class="org.springframework.security.web.authentication.session.ConcurrentSessionControlAuthenticationStrategy">
 		<beans:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
 		<beans:property name="maximumSessions" value="1" />
+		<!-- 
 		<beans:property name="alwaysCreateSession" value="true" />
 		<beans:property name="migrateSessionAttributes" value="false" />
+		 -->
 		<beans:property name="exceptionIfMaximumExceeded" value="false" />
 	</beans:bean>
 	
@@ -40,7 +42,7 @@
 		<beans:property name="basenames" value="classpath:message_zh_CN" />
 	</beans:bean>
 	
-	<beans:bean id="myFilter" class="com.templete.security.SecurityFilter">
+	<beans:bean id="myFilter" class="com.templete.core.security.SecurityFilter">
 		<beans:property name="authenticationManager" ref="myAuthenticationManager" />
 		<beans:property name="accessDecisionManager" ref="myAccessDecisionManager" />
 		<beans:property name="securityMetadataSource" ref="mySecurityMetadataSource" />
@@ -52,11 +54,11 @@
 		</authentication-provider>
 	</authentication-manager>
 	
-	<beans:bean id="myAccessDecisionManager" class="com.templete.security.SecurityAccessDecisionManager" />
+	<beans:bean id="myAccessDecisionManager" class="com.templete.core.security.SecurityAccessDecisionManager" />
 	
-	<beans:bean id="mySecurityMetadataSource" class="com.templete.security.SecurityMetadataSource" />
+	<beans:bean id="mySecurityMetadataSource" class="com.templete.core.security.SecurityMetadataSource" />
 	
-	<beans:bean id="myUserDetailServiceImpl" class="com.templete.security.UserDetailServiceImpl" />
+	<beans:bean id="myUserDetailServiceImpl" class="com.templete.core.security.UserDetailServiceImpl" />
 	
 	<beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" />
 </beans:beans>  

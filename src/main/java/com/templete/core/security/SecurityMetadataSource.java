@@ -1,4 +1,4 @@
-package com.templete.security;
+package com.templete.core.security;
 
 import java.util.ArrayList;
 import java.util.Collection;

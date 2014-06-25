@@ -1,4 +1,4 @@
-package com.templete.security;
+package com.templete.core.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
