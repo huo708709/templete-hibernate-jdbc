@@ -6,12 +6,11 @@
 						http://www.springframework.org/schema/security 
 						http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
-	<global-method-security pre-post-annotations="enabled" />
+	<global-method-security pre-post-annotations="enabled" access-decision-manager-ref="myAccessDecisionManager" />
 	<http pattern="/script/**" security="none" />
 	<http pattern="/login.jsp" security="none" />
 
-	<http use-expressions="true" auto-config="true"
-		access-denied-page="/timeout.jsp">
+	<http use-expressions="true" auto-config="true" access-denied-page="/timeout.jsp">
 		<form-login login-page="/login.jsp" default-target-url="/platform/index.jsp"
 			always-use-default-target="true" authentication-failure-url="/login.jsp?login_error=1" />
 		<logout invalidate-session="true" logout-success-url="/login.jsp"
@@ -38,9 +37,11 @@
 	
 	<beans:bean class="org.springframework.security.authentication.event.LoggerListener" />
 	
+	<!-- 
 	<beans:bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<beans:property name="basenames" value="classpath:message_zh_CN" />
 	</beans:bean>
+	 -->
 	
 	<beans:bean id="myFilter" class="com.templete.core.security.SecurityFilter">
 		<beans:property name="authenticationManager" ref="myAuthenticationManager" />
