@@ -12,13 +12,20 @@ import org.springframework.security.web.access.intercept.FilterInvocationSecurit
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.security.web.util.matcher.RequestMatcher;
 
-public class SecurityMetadataSource implements
-FilterInvocationSecurityMetadataSource {
+import com.templete.exception.SystemRunException;
+import com.templete.service.IUserService;
 
-	private static Map<String, Collection<ConfigAttribute>> resourceMap = null;  
+public class SecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
+
+	private static Map<String, Collection<ConfigAttribute>> resourceMap = null;
+	
 	private RequestMatcher pathMatcher;
 	
-	public SecurityMetadataSource() throws Exception {
+	@SuppressWarnings("unused")
+	private IUserService userService;
+	
+	public SecurityMetadataSource(IUserService userService) throws SystemRunException  {
+		this.userService = userService;
 		loadResourceDefine();
 	}
 	
@@ -26,9 +33,10 @@ FilterInvocationSecurityMetadataSource {
 	 * 加载所有权限与资源的关系
 	 * @throws SystemRunException
 	 */
-	private void loadResourceDefine() throws Exception {
+	private void loadResourceDefine() throws SystemRunException  {
 		if (resourceMap == null) {
 			resourceMap = new HashMap<String, Collection<ConfigAttribute>>();
+//			List<TSysPowersystem> resources = this.userService.findByTSysPowersystem();
 		}
 	}
 

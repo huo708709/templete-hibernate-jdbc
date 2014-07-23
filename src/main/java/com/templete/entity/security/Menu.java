@@ -16,20 +16,23 @@ public class Menu extends AbstractUUIDEntity {
 	private static final long serialVersionUID = 1L;
 	
 	@Column(length = 50, nullable = false)
-	private String name;
+	private String text;
 	
 	@Column(length = 50)
 	private String iconCls;
 	
 	@Column(length = 50)
 	private String url;
+	
+	@Column(length = 32)
+	private String pid;
 
-	public String getName() {
-		return name;
+	public String getText() {
+		return text;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setText(String text) {
+		this.text = text;
 	}
 
 	public String getIconCls() {
@@ -46,6 +49,14 @@ public class Menu extends AbstractUUIDEntity {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+
+	public String getPid() {
+		return pid;
+	}
+
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 
 }

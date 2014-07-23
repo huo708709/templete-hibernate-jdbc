@@ -1,0 +1,247 @@
+2014-07-18 20:41:01,863 [main] [org.springframework.web.context.ContextLoader] [INFO] - Root WebApplicationContext: initialization started
+2014-07-18 20:41:01,949 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Refreshing Root WebApplicationContext: startup date [Fri Jul 18 20:41:01 CST 2014]; root of context hierarchy
+2014-07-18 20:41:01,988 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%20Professional%202014/templete-hibernate-jdbc/target/classes/applicationContext.xml]
+2014-07-18 20:41:02,420 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%20Professional%202014/templete-hibernate-jdbc/target/classes/applicationContext-security.xml]
+2014-07-18 20:41:02,488 [main] [org.springframework.security.core.SpringSecurityCoreVersion] [INFO] - You are running with Spring Security Core 3.2.4.RELEASE
+2014-07-18 20:41:02,489 [main] [org.springframework.security.config.SecurityNamespaceHandler] [INFO] - Spring Security 'config' module version is 3.2.4.RELEASE
+2014-07-18 20:41:02,505 [main] [org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser] [INFO] - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+2014-07-18 20:41:02,661 [main] [org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] [INFO] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.session.ConcurrentSessionFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1100, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <myFilter>, order = 2299, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300]
+2014-07-18 20:41:02,931 [main] [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] [INFO] - Loading properties file from class path resource [configuration.properties]
+2014-07-18 20:41:02,942 [main] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] [INFO] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-07-18 20:41:03,140 [main] [com.mchange.v2.log.MLog] [INFO] - MLog clients using log4j logging.
+2014-07-18 20:41:03,415 [main] [com.mchange.v2.c3p0.C3P0Registry] [INFO] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-07-18 20:41:03,901 [main] [org.hibernate.annotations.common.Version] [INFO] - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-07-18 20:41:03,916 [main] [org.hibernate.Version] [INFO] - HHH000412: Hibernate Core {4.3.5.Final}
+2014-07-18 20:41:03,916 [main] [org.hibernate.cfg.Environment] [INFO] - HHH000206: hibernate.properties not found
+2014-07-18 20:41:03,916 [main] [org.hibernate.cfg.Environment] [INFO] - HHH000021: Bytecode provider name : javassist
+2014-07-18 20:41:03,932 [main] [org.hibernate.cfg.Configuration] [INFO] - HHH000044: Configuring from URL: file:/D:/Workspaces/MyEclipse%20Professional%202014/templete-hibernate-jdbc/target/classes/hibernate.cfg.xml
+2014-07-18 20:41:03,980 [main] [org.hibernate.internal.util.xml.DTDEntityResolver] [WARN] - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2014-07-18 20:41:04,011 [main] [org.hibernate.cfg.Configuration] [INFO] - HHH000041: Configured SessionFactory: null
+2014-07-18 20:41:04,182 [main] [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z93ke2k0kzfrpt8|2073c4a2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z93ke2k0kzfrpt8|2073c4a2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/templete?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 4, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-07-18 20:41:24,152 [Timer-0] [com.mchange.v2.async.ThreadPoolAsynchronousRunner] [WARN] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@602f0efd -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+2014-07-18 20:41:24,158 [Timer-0] [com.mchange.v2.async.ThreadPoolAsynchronousRunner] [WARN] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@602f0efd -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1cfaefa5 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1e8b4880 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@4a44db2a (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@6e90c87d
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+2014-07-18 20:41:48,421 [main] [org.hibernate.dialect.Dialect] [INFO] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2014-07-18 20:41:48,443 [main] [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] [INFO] - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-07-18 20:41:48,762 [main] [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] [INFO] - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2014-07-18 20:41:48,773 [main] [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] [INFO] - HHH000397: Using ASTQueryTranslatorFactory
+2014-07-18 20:41:48,862 [main] [org.hibernate.id.UUIDHexGenerator] [WARN] - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2014-07-18 20:41:49,815 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000228: Running hbm2ddl schema update
+2014-07-18 20:41:49,815 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000102: Fetching database metadata
+2014-07-18 20:41:49,820 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000396: Updating schema
+2014-07-18 20:41:50,043 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_menu
+2014-07-18 20:41:50,043 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, name, url, iconcls]
+2014-07-18 20:41:50,043 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:41:50,044 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:41:50,081 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_organization
+2014-07-18 20:41:50,082 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, level, name, parentid]
+2014-07-18 20:41:50,082 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:41:50,082 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:41:50,098 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_role
+2014-07-18 20:41:50,098 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, name]
+2014-07-18 20:41:50,098 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:41:50,099 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:41:50,154 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_user
+2014-07-18 20:41:50,154 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, username, password]
+2014-07-18 20:41:50,155 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:41:50,155 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [uk_jhib4legehrm4yscx9t3lirqi, primary]
+2014-07-18 20:41:50,218 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_user_role
+2014-07-18 20:41:50,218 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, roleid, userid]
+2014-07-18 20:41:50,218 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:41:50,218 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:41:50,219 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000232: Schema update complete
+2014-07-18 20:41:50,690 [main] [org.springframework.web.context.ContextLoader] [ERROR] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: AccessDecisionManager does not support secure object class: interface org.aopalliance.intercept.MethodInvocation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:746)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:238)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1240)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:689)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:482)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:281)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:521)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:133)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:46)
+Caused by: java.lang.IllegalArgumentException: AccessDecisionManager does not support secure object class: interface org.aopalliance.intercept.MethodInvocation
+	at org.springframework.util.Assert.isTrue(Assert.java:65)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.afterPropertiesSet(AbstractSecurityInterceptor.java:129)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	... 53 more
+2014-07-18 20:42:04,703 [main] [org.springframework.web.context.ContextLoader] [INFO] - Root WebApplicationContext: initialization started
+2014-07-18 20:42:04,782 [main] [org.springframework.web.context.support.XmlWebApplicationContext] [INFO] - Refreshing Root WebApplicationContext: startup date [Fri Jul 18 20:42:04 CST 2014]; root of context hierarchy
+2014-07-18 20:42:04,829 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%20Professional%202014/templete-hibernate-jdbc/target/classes/applicationContext.xml]
+2014-07-18 20:42:05,259 [main] [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] [INFO] - Loading XML bean definitions from URL [file:/D:/Workspaces/MyEclipse%20Professional%202014/templete-hibernate-jdbc/target/classes/applicationContext-security.xml]
+2014-07-18 20:42:05,334 [main] [org.springframework.security.core.SpringSecurityCoreVersion] [INFO] - You are running with Spring Security Core 3.2.4.RELEASE
+2014-07-18 20:42:05,334 [main] [org.springframework.security.config.SecurityNamespaceHandler] [INFO] - Spring Security 'config' module version is 3.2.4.RELEASE
+2014-07-18 20:42:05,360 [main] [org.springframework.security.config.method.GlobalMethodSecurityBeanDefinitionParser] [INFO] - Expressions were enabled for method security but no SecurityExpressionHandler was configured. All hasPermision() expressions will evaluate to false.
+2014-07-18 20:42:05,519 [main] [org.springframework.security.config.http.HttpSecurityBeanDefinitionParser] [INFO] - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.session.ConcurrentSessionFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1100, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1900, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <myFilter>, order = 2299, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300]
+2014-07-18 20:42:05,744 [main] [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] [INFO] - Loading properties file from class path resource [configuration.properties]
+2014-07-18 20:42:05,755 [main] [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] [INFO] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2014-07-18 20:42:06,039 [main] [com.mchange.v2.log.MLog] [INFO] - MLog clients using log4j logging.
+2014-07-18 20:42:06,175 [main] [com.mchange.v2.c3p0.C3P0Registry] [INFO] - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-07-18 20:42:06,682 [main] [org.hibernate.annotations.common.Version] [INFO] - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-07-18 20:42:06,689 [main] [org.hibernate.Version] [INFO] - HHH000412: Hibernate Core {4.3.5.Final}
+2014-07-18 20:42:06,692 [main] [org.hibernate.cfg.Environment] [INFO] - HHH000206: hibernate.properties not found
+2014-07-18 20:42:06,694 [main] [org.hibernate.cfg.Environment] [INFO] - HHH000021: Bytecode provider name : javassist
+2014-07-18 20:42:06,715 [main] [org.hibernate.cfg.Configuration] [INFO] - HHH000044: Configuring from URL: file:/D:/Workspaces/MyEclipse%20Professional%202014/templete-hibernate-jdbc/target/classes/hibernate.cfg.xml
+2014-07-18 20:42:06,739 [main] [org.hibernate.internal.util.xml.DTDEntityResolver] [WARN] - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2014-07-18 20:42:06,759 [main] [org.hibernate.cfg.Configuration] [INFO] - HHH000041: Configured SessionFactory: null
+2014-07-18 20:42:06,954 [main] [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [INFO] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z93ke3wk712r0raj|2bb8a47f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z93ke3wk712r0raj|2bb8a47f, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/templete?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 4, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-07-18 20:42:07,298 [main] [org.hibernate.dialect.Dialect] [INFO] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2014-07-18 20:42:07,315 [main] [org.hibernate.engine.jdbc.internal.LobCreatorBuilder] [INFO] - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-07-18 20:42:07,572 [main] [org.hibernate.engine.transaction.internal.TransactionFactoryInitiator] [INFO] - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2014-07-18 20:42:07,580 [main] [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] [INFO] - HHH000397: Using ASTQueryTranslatorFactory
+2014-07-18 20:42:07,630 [main] [org.hibernate.id.UUIDHexGenerator] [WARN] - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2014-07-18 20:42:07,838 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000228: Running hbm2ddl schema update
+2014-07-18 20:42:07,839 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000102: Fetching database metadata
+2014-07-18 20:42:07,844 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000396: Updating schema
+2014-07-18 20:42:07,870 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_menu
+2014-07-18 20:42:07,871 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, name, url, iconcls]
+2014-07-18 20:42:07,871 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:42:07,871 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:42:07,883 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_organization
+2014-07-18 20:42:07,883 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, level, name, parentid]
+2014-07-18 20:42:07,883 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:42:07,884 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:42:07,893 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_role
+2014-07-18 20:42:07,893 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, name]
+2014-07-18 20:42:07,893 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:42:07,893 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:42:07,904 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_user
+2014-07-18 20:42:07,904 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, username, password]
+2014-07-18 20:42:07,904 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:42:07,904 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [uk_jhib4legehrm4yscx9t3lirqi, primary]
+2014-07-18 20:42:07,915 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000261: Table found: templete.t_user_role
+2014-07-18 20:42:07,915 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000037: Columns: [id, roleid, userid]
+2014-07-18 20:42:07,915 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000108: Foreign keys: []
+2014-07-18 20:42:07,915 [main] [org.hibernate.tool.hbm2ddl.TableMetadata] [INFO] - HHH000126: Indexes: [primary]
+2014-07-18 20:42:07,916 [main] [org.hibernate.tool.hbm2ddl.SchemaUpdate] [INFO] - HHH000232: Schema update complete
+2014-07-18 20:42:08,473 [main] [org.springframework.web.context.ContextLoader] [ERROR] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: AccessDecisionManager does not support secure object class: interface org.aopalliance.intercept.MethodInvocation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:746)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:238)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1240)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:689)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:482)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:281)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:521)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:133)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:46)
+Caused by: java.lang.IllegalArgumentException: AccessDecisionManager does not support secure object class: interface org.aopalliance.intercept.MethodInvocation
+	at org.springframework.util.Assert.isTrue(Assert.java:65)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.afterPropertiesSet(AbstractSecurityInterceptor.java:129)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	... 53 more

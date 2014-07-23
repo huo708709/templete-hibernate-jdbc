@@ -127,7 +127,7 @@
     </init-param>
     <init-param>
       <param-name>dirAllowed</param-name>
-      <param-value>true</param-value>
+      <param-value>false</param-value>
     </init-param>
     <init-param>
       <param-name>welcomeServlets</param-name>
@@ -506,7 +506,7 @@
     </locale-encoding-mapping>
     <locale-encoding-mapping>
       <locale>zh</locale>
-      <encoding>GB2312</encoding>
+      <encoding>UTF-8</encoding>
     </locale-encoding-mapping>
     <locale-encoding-mapping>
       <locale>zh_TW</locale>
