@@ -14,9 +14,6 @@ import com.templete.entity.AbstractUUIDEntity;
 @Table(name = "t_role")
 public class Role extends AbstractUUIDEntity {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	
 	@Column(length = 32, nullable = false)

@@ -31,9 +31,10 @@ public class UserService extends AbstractService<User, String> implements IUserS
 		}
 		return null;
 	}
+
+	@Override
+	public List<User> listUser(User user) throws SystemRunException {
+		return null;
+	}
 	
-//	@Override
-//	public User save(User entity) throws SystemRunException {
-//		return (User) userDao.save(entity);
-//	}
 }

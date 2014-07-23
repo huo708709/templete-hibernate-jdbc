@@ -50,7 +50,7 @@
 	</bean>
 
 	<!-- 异常捕获 -->
-	<bean id="exceptionResolver" class="com.templete.core.WebHandlerExceptionResolver">
+	<bean id="exceptionResolver" class="com.templete.web.WebHandlerExceptionResolver">
 		<property name="defaultErrorView">
 			<value>error/appException</value>
 		</property>

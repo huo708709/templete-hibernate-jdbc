@@ -1,4 +1,4 @@
-package com.templete.core;
+package com.templete.web;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +14,7 @@ public class WebHandlerExceptionResolver extends SimpleMappingExceptionResolver 
 			HttpServletResponse response, Object object, Exception ex) {
 
 		//记录异常日志
-		Logger logger=Logger.getRootLogger();
+		Logger logger = Logger.getRootLogger();
 		logger.error(ex.getMessage(),ex);
 		
 		return super.doResolveException(request, response, object, ex);
