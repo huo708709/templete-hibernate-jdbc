@@ -11,8 +11,6 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.orm.hibernate4.HibernateCallback;
 import org.springframework.orm.hibernate4.HibernateTemplate;
 
@@ -34,15 +32,6 @@ public abstract class AbstractDao<T, ID extends Serializable> {
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate = null;
-	
-	/*
-	 * spring-jdbc 部门================================================
-	 */
-	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public List listQuery(String sql, Object[] args, Class c) {
-		RowMapper rowMapper = ParameterizedBeanPropertyRowMapper.newInstance(c);
-		return this.jdbcTemplate.query(sql, args, rowMapper);
-	}
 	
 	/*
 	 * hibernate 部门================================================
