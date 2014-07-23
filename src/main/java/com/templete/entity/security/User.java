@@ -1,7 +1,11 @@
 package com.templete.entity.security;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.templete.entity.AbstractUUIDEntity;
@@ -18,6 +22,9 @@ public class User extends AbstractUUIDEntity {
 	@Column(length = 32, nullable = false)
 	private String password;
 
+	@OneToMany(mappedBy="user", cascade=CascadeType.ALL)
+	private List<UserRole> userRoles;
+	
 	public String getUsername() {
 		return username;
 	}
@@ -32,6 +39,14 @@ public class User extends AbstractUUIDEntity {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public List<UserRole> getUserRoles() {
+		return userRoles;
+	}
+
+	public void setUserRoles(List<UserRole> userRoles) {
+		this.userRoles = userRoles;
 	}
 	
 }

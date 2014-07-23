@@ -28,7 +28,7 @@ Ext.define('Westar.view.Viewport', {
 			region: 'center',
 			layout: 'fit',
             items: {
-            	xtype: 'tabView',
+            	xtype: 'tabpanel',
             	items: [{
                     title: 'Foo',
                     closable: true,
